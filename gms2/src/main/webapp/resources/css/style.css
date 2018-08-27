@@ -1,0 +1,273 @@
+@charset "UTF-8";
+body{
+	font-family: 'Malgun Gothic', 'Verdana';
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.5em;
+}
+h1{
+	font-size: 2em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+html, body,table, #wrapper{padding: 0;margin: 0;padding: 0;border: 0;}
+div#wrapper{
+	width: 90%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#header{
+	position: relative;
+	margin-bottom: 0;
+	padding: 0;
+	color: #fff;
+}
+div#title{
+	float: left;
+	text-align: left;
+	display: block;
+}
+div#login_box{
+	float: right;
+	margin: 0;
+	font-size: 1.1em;
+	display: block;
+	color: #000000;
+}
+div#login_box a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+div#login_box a:active{
+	color: #000000;
+	text-decoration: none;
+}
+div#header{border: 3px solid black;}
+div#header h1{
+	color: #ffffff;
+	padding: 5px 0;
+	margin: 0;
+	border: none;
+	text-align:center;
+	line-height: 2em;
+	font-weight: bold;
+	font-size: 32px;
+	
+}
+div#content{
+	padding: 15px 30px;
+	background-color: #ffffff;
+	margin-bottom: 30px;
+	min-height: 400px;
+	color: black;
+	border: 3px solid black
+}
+div#content_box{
+	clear:both;
+	margin-top: 40px; 
+}
+div#menu_box{
+	clear:both;
+	margin-top: 40px;
+}
+ul#menu{
+	text-align: right;
+	margin: 0;
+	border-bottom: 1px #8000ff;
+	position: relative;
+}
+ul#menu li{
+	display: inline;
+	list-style: none;
+	background-color: #ff8000;
+}
+ul#menu li a{
+	padding: 10px 20px;
+	background-color: #c0c0c0;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 2.8em;
+	color : black;
+}
+ul#menu li a:hover{
+	background-color: #0080ff;
+	text-decoration: none;
+}
+ul#menu li a:active{
+	background-color: #00ff00;
+	text-decoration: none;
+}
+div#footer{
+	clear:both;
+	color: #000000;
+	text-align: center;
+	margin: 100px;
+	padding: 10px 0;
+	line-height: normal;
+	font-size: 0.5em;
+}
+table{border:1px solid black}
+table tr{border:1px solid black}
+table tr th{border:1px solid black}
+table tr td{border:1px solid black}
+.bg_color_yellow{background-color: #ffff00}
+.center{margin: 0 auto}
+.width_100_pt{width:100%}
+.width_90_pt{width:90%}
+.width_80_pt{width:80%}
+.font_color_blue{color:blue}
+.cursor{cursor:point}
+.margin_top_30_px{margin-top: 30px}
+.margin_top_50_px{margin-top: 50px}
+.margin_left_200_px{margin-left: 200px}
+.margin_right_200_px{margin-right: 200px}
+.margin_bot_30_px{margin-bottom: 30px}
+.margin_bot_50_px{margin-bottom: 50px}
+.width300px{width:300px}
+.float_right{float:right;}
+div#title_box{background-color: #000}
+.page_box{
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0 auto;
+     width: 200px;
+}
+.page_box li{
+    display:inline;
+}
+/*------------------------------------------------------------------
+[ login__form ]*/
+
+#login__form {border: 3px solid #f1f1f1;}
+#login__form input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#login__form .login__btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#login__form button:hover {
+    opacity: 0.8;
+}
+
+#login_form .cancel_btn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+#login__form .container {
+    padding: 16px;
+}
+
+#login__form span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .login__form span.psw {
+       display: block;
+       float: none;
+    }
+    .login__form .cancelbtn {
+       width: 100%;
+    }
+}
+/*--------------
+-- Grid Layout
+-- This grid layout contains six columns and three rows:
+---------------*/
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*--------------
+-- add_form
+---------------*/
+/* Full-width input fields */
+#add_form input[type=text],
+#add_form input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#add_form input[type=text]:focus,
+#add_form  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+#add_form  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+#add_form .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#add_form .registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+#add_form a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+#add_form .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
