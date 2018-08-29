@@ -32,18 +32,18 @@ div#title{
 	text-align: left;
 	display: block;
 }
-div#login_box{
+div#login__box{
 	float: right;
 	margin: 0;
 	font-size: 1.1em;
 	display: block;
 	color: #000000;
 }
-div#login_box a:hover{
+div#login__box a:hover{
 	color: #000000;
 	text-decoration: none;
 }
-div#login_box a:active{
+div#login__box a:active{
 	color: #000000;
 	text-decoration: none;
 }
@@ -71,7 +71,7 @@ div#content_box{
 	clear:both;
 	margin-top: 40px; 
 }
-div#menu_box{
+div#menu__box{
 	clear:both;
 	margin-top: 40px;
 }
@@ -115,33 +115,33 @@ table{border:1px solid black}
 table tr{border:1px solid black}
 table tr th{border:1px solid black}
 table tr td{border:1px solid black}
-.bg_color_yellow{background-color: #ffff00}
+.bg__color__yellow{background-color: #ffff00}
 .center{margin: 0 auto}
-.width_100_pt{width:100%}
-.width_90_pt{width:90%}
-.width_80_pt{width:80%}
-.font_color_blue{color:blue}
+.width__100__pt{width:100%}
+.width__90__pt{width:90%}
+.width__80__pt{width:80%}
+.font__color__blue{color:blue}
 .cursor{cursor:point}
-.margin_top_30_px{margin-top: 30px}
-.margin_top_50_px{margin-top: 50px}
-.margin_left_200_px{margin-left: 200px}
-.margin_right_200_px{margin-right: 200px}
-.margin_bot_30_px{margin-bottom: 30px}
-.margin_bot_50_px{margin-bottom: 50px}
+.margin__top__30__px{margin-top: 30px}
+.margin__top__50__px{margin-top: 50px}
+.margin__left__200__px{margin-left: 200px}
+.margin__right__200__px{margin-right: 200px}
+.margin__bot__30__px{margin-bottom: 30px}
+.margin__bot__50__px{margin-bottom: 50px}
 .width300px{width:300px}
-.float_right{float:right;}
-div#title_box{background-color: #000}
-.page_box{
+.float__right{float:right;}
+div#title__box{background-color: #000}
+.page__box{
     list-style: none; /* Remove list bullets */
     padding: 0;
     margin: 0 auto;
      width: 200px;
 }
-.page_box li{
+.page__box li{
     display:inline;
 }
 /*------------------------------------------------------------------
-[ login__form ]*/
+[ login_form ]*/
 
 #login__form {border: 3px solid #f1f1f1;}
 #login__form input[type=text], input[type=password] {
@@ -166,7 +166,7 @@ div#title_box{background-color: #000}
     opacity: 0.8;
 }
 
-#login_form .cancel_btn {
+#login__form .cancel_btn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
@@ -179,6 +179,15 @@ div#title_box{background-color: #000}
 #login__form span.psw {
     float: right;
     padding-top: 16px;
+}
+#add__form .submit__btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -220,11 +229,11 @@ div#title_box{background-color: #000}
 }
 
 /*--------------
--- add_form
+-- add__form
 ---------------*/
 /* Full-width input fields */
-#add_form input[type=text],
-#add_form input[type=password] {
+#add__form input[type=text],
+#add__form input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -233,20 +242,20 @@ div#title_box{background-color: #000}
     background: #f1f1f1;
 }
 
-#add_form input[type=text]:focus,
-#add_form  input[type=password]:focus {
+#add__form input[type=text]:focus,
+#add__form  input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 
 /* Overwrite default styles of hr */
-#add_form  hr {
+#add__form  hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
 
 /* Set a style for the submit button */
-#add_form .registerbtn {
+#add__form .registerbtn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
@@ -257,17 +266,17 @@ div#title_box{background-color: #000}
     opacity: 0.9;
 }
 
-#add_form .registerbtn:hover {
+#add__form .registerbtn:hover {
     opacity: 1;
 }
 
 /* Add a blue text color to links */
-#add_form a {
+#add__form a {
     color: dodgerblue;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
-#add_form .signin {
+#add__form .signin {
     background-color: #f1f1f1;
     text-align: center;
 }

@@ -30,6 +30,10 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/1027/sts__3.9/spring-test-5.0.8.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/1027/sts__3.9/hamcrest-all-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/1027/sts__3.9/hamcrest-core-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/1027/sts__3.9/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

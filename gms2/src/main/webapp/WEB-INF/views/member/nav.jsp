@@ -41,7 +41,7 @@
         <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-          		마이페이지 <span class="caret"></span>
+          		${user.name} 페이지 <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" role="menu">
             <li><a id="logout__btn" >로그아웃</a></li>

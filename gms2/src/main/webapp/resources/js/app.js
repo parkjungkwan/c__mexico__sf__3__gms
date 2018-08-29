@@ -12,14 +12,50 @@ app = {
 		$('#login__btn').click(()=>{
 			location.href = app.x()+'/move/auth/member/login';
 		});
-		$('#join__btn').click(()=>{
+		$('#add__btn').click(()=>{
 			location.href = app.x()+'/move/auth/member/add';
 		});
 		$('#login__submit').click(()=>{
-			location.href = app.x()+'/member/login';
+			alert('로그인 실행 :::: '+app.x());
+			$('#login__form')
+			.attr({
+				action:app.x()+"/member/login",
+				method:"POST"
+			})
+			.submit();
+		});
+		$('#add__submit').click(()=>{
+			alert('add__submit click !!'+app.x()+"/member/add");
+			/*var form = document.getElementById('add__form');
+			form.action = app.x()+"/member/add";
+			form.method = "POST"; //get은 입력값을 노출, post는 노출x form태그만 post방식이 있음
+			*/
+			$('#add__form')
+			.attr({
+				action:app.x()+"/member/add",
+				method:"POST"
+			})
+			.submit();
+			
+			/*	member.join({
+				userid:form.userid.value,
+				password:form.pass.value,
+				 name:form.name.value,
+				 ssn:form.ssn.value});
+			var arr =[
+				{name:"action", value:"add"},
+				{name:"gender", value:member.getGender()},
+				{name:"age", value:member.getAge()}];
+			for(var i=0;i<arr.length;i++){
+				var node = document.createElement('input');
+				node.setAttribute('type','hidden');
+				node.setAttribute('name',arr[i].name);
+				node.setAttribute('value',arr[i].value);
+				form.appendChild(node);
+			} */
+			form.submit();
 		});
 		$('#logout__btn').click(()=>{
-			alert('logout');
 			location.href = app.x()+'/member/logout';
 		});
 	},

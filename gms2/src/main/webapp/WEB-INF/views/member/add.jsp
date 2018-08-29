@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="contentBox">
-<form id="add_form" name="add_form">
- 	<div id="add_layout">
+<form id="add__form" name="add__form">
+ 	<div id="add__layout">
  	<label for="userid"><b>아이디</b></label>
-    <input type="text" placeholder="아이디 입력" name="userid" required>
+    <input type="text" placeholder="아이디 입력" name="userid" value="test" required>
     
      <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="비밀번호 입력" name="password" required>
+    <input type="password" placeholder="비밀번호 입력" name="password" value="1"  required>
     
     <label for="email"><b>이 름</b></label>
-    <input type="text" placeholder="이 름 입 력" name="name" required>
+    <input type="text" placeholder="이 름 입 력" name="name"  value="테스트"  required>
     
     <label for="email"><b>주민번호(생년월일-앞자리)</b></label>
-    <input type="text" placeholder="(예시) 900101-1" name="ssn" required>
+    <input type="text" placeholder="(예시) 900101-1" name="ssn" value="테스트"  required>
         
        <label for="userid"><b>소속팀</b></label>
            <input type="radio" name="teamid" 
@@ -46,6 +46,7 @@
         <input type="checkbox" name="subject" value="html" /> HTML
         <input type="checkbox" name="subject" value="spring" /> Spring
     </div>
+    <button id="add__submit" class="submit__btn">회원 가입</button>
     </form>
     </div>
  

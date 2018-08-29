@@ -6,11 +6,11 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.gms.web.domain.MemberDTO;
-import com.gms.web.repository.MemberDAO;
+import com.gms.web.mapper.MemberMapper;
 import com.gms.web.service.MemberService;
 @Service
 public class MemberServiceImpl implements MemberService{
-	@Autowired MemberDAO memberDAO;
+	@Autowired MemberMapper memberDAO;
 	@Override
 	public void add(MemberDTO p) {
 		
@@ -29,8 +29,11 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public MemberDTO retrieve(Map<?, ?> p) {
-		return memberDAO.selectOne(p);
+	public MemberDTO retrieve(MemberDTO p) {
+		System.out.println("Param Id is "+p.getUserid());
+		MemberDTO m = memberDAO.selectOne(p); 
+		System.out.println("Result Id is "+m.getUserid());
+		return m;
 	}
 
 	@Override
@@ -40,19 +43,19 @@ public class MemberServiceImpl implements MemberService{
 	}
 
 	@Override
-	public void modify(Map<?, ?> p) {
+	public void modify(MemberDTO p) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void remove(Map<?, ?> p) {
+	public void remove(MemberDTO p) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public boolean login(Map<?, ?> p) {
+	public boolean login(MemberDTO p) {
 		// TODO Auto-generated method stub
 		return false;
 	}

@@ -45,7 +45,7 @@
           </a>
           <ul class="dropdown-menu" role="menu">
             <li><a id="login__btn" href="#">로그인</a></li>
-            <li><a id="join__btn" href="#">회원가입</a></li>
+            <li><a id="add__btn" href="#">회원가입</a></li>
             <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
