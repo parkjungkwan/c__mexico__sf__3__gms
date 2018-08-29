@@ -1,5 +1,6 @@
 "use strict";
 var app = app || {};
+var user = user || {};
 app = {
 	init : x=>{
 		console.log('step 1');
@@ -23,6 +24,11 @@ app = {
 				method:"POST"
 			})
 			.submit();
+			
+		});
+		$('#mypage__btn').click(()=>{
+			alert('마이페이지 로 이동');
+			location.href = app.x()+'/member/retrieve/'+userid;
 		});
 		$('#add__submit').click(()=>{
 			alert('add__submit click !!'+app.x()+"/member/add");
@@ -87,11 +93,44 @@ app.c = ()=>{
 app.i = ()=>{
 	return app.session.path('img');
 };
+function userSession(x){
+	
+}
 
+/*user.session = {
+	setUserid : x=>{
+		sessionStorage.setItem('userid',x);
+	},
+	setName : x=>{
+		sessionStorage.setItem('name',x);
+	},
+	setGender : x=>{
+		sessionStorage.setItem('gender',x);
+	},
+	setAge : x=>{
+		sessionStorage.setItem('age',x);
+	},
+	setRoll : x=>{
+		sessionStorage.setItem('roll',x);
+	},
+	setTeamid : x=>{
+		sessionStorage.setItem('teamid',x);
+	},
+	setEmail : x=>{
+		sessionStorage.setItem('email',x);
+	},
+	setPhone : x=>{
+		sessionStorage.setItem('phone',x);
+	}
+};*/
 
-
-
-
+user.session = x=>{
+	$.each(x, (k,v)=>{
+		alert('key:'+k+', value:'+v);
+		sessionStorage.setItem(k,v);
+	});
+	alert(sessionStorage.getItem('userid'));
+}
 
 
 

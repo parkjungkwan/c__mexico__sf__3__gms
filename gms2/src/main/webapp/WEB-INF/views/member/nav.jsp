@@ -42,8 +42,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
           		${user.name} 페이지 <span class="caret"></span>
+          		<input type="hidden" id="session__id" value="${user.userid}" />
           </a>
           <ul class="dropdown-menu" role="menu">
+          	<li><a id="mypage__btn" >마이페이지</a></li>
             <li><a id="logout__btn" >로그아웃</a></li>
             
           </ul>
@@ -52,6 +54,35 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<script>
+/* 	user.session.setUserid('${user.userid}');
+	user.session.setName('${user.name}');
+	user.session.setGender('${user.gender}');
+	user.session.setAge('${user.age}');
+	user.session.setRoll('${user.roll}');
+	user.session.setTeamid('${user.teamid}');
+	user.session.setEmail('${user.email}');
+	user.session.setPhone('${user.phone}'); */
+	user.session({
+		userid : '${user.userid}',
+		name : '${user.name}',
+		gender : '${user.gender}',
+		age : '${user.age}',
+		roll : '${user.roll}',
+		teamid : '${user.teamid}',
+		email : '${user.email}',
+		phone : '${user.phone}'
+	});
+</script>
+
+
+
+
+
+
+
+
+
 
 
 
